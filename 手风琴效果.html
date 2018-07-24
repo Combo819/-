@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>手风琴效果</title>
+    </head>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .tit{
+            position: absolute;
+            width: 300px;
+            left: 50%;
+            top: 100px;
+            margin-left: -150px;
+            font-family: "微软雅黑";
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .box{
+            margin: 0 auto;
+            margin-top: 300px;
+            background-color: black;
+            /* border: 1px solid #000; */
+            width: 702px;
+            height: 200px;
+            overflow: hidden;
+            /* background-color: rebeccapurple; */
+        }
+        .box ul li{
+            list-style: none;
+            float: left;
+            width: 117px;
+            height: 200px;
+            transition: width 0.5s;
+        }
+        .box ul:hover li{
+           
+            width: 70px;
+        }
+        .box ul li:hover{
+            
+            width: 350px;
+        }
+        .enter{
+            width: 80px;
+            height: 50px;
+            /* background-color: rebeccapurple; */
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+
+        .enter input{
+            width: 80px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #b3b3b3;
+            border: 0;
+        }
+    </style>
+    <body>
+        <div class="tit">
+            <p>请选择你的男朋♂友</p>
+        </div>
+        <div class="box">
+            <ul>
+                <li><img src="images/milos.jpg" /></li>
+                <li><img src="images/monan.jpg" /></li>
+                <li><img src="images/muji.jpg" /></li>
+                <li><img src="images/peace.jpg" /></li>
+                <li><img src="images/tianyan.jpg" /></li>
+                <li><img src="images/van.jpg" /></li>
+            </ul>
+        </div>
+        <div class="enter">
+            <form>
+                <input type="submit" name="" value="进♂入游戏" />
+            </form>
+        </div>
+    </body>
+</html>
